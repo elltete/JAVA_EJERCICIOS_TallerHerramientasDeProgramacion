@@ -1,0 +1,7 @@
+package Examen;
+
+public enum Resultado {
+	
+	OK, YA_EXISTE, NOMBRES_IGUALES, EDAD_ERRONEA, NOMBRE_VACIO, NO_EXISTE, YA_SON_AMIGOS, NO_SON_AMIGOS,
+
+}

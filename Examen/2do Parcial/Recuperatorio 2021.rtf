@@ -1,0 +1,102 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww23640\viewh13920\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs38 \cf0 THP - RECUPERATORIO 2021\
+\
+Enunciado\
+Un prestigioso banco nos solicita desarrollar su propia Billetera Virtual . Por promoci\'f3n de lanzamiento, la billetera no cobra intereses sobre las cuotas aplicadas.\
+La aplicaci\'f3n brinda servicios a personas, por ello la misma tiene una lista de clientes. \
+Cada uno de los mismos, cuenta con la siguiente informaci\'f3n:\
+- Dni (String, se supone \'fanico)\
+- Lista de tarjetas (son las que el mismo usuario registrar\'e1 en la aplicaci\'f3n)\
+- Cantidad de compras realizadas (debe establecerse inicialmente en 0)\
+\
+De cada tarjeta se conoce:\
+- N\'famero de tarjeta (String, por ejemplo 4444333322221111) \
+- Nombre de tarjeta (YATAYPLUS, MONTACARD, INSTICARD) \
+- Monto disponible (el mismo debe ser mayor o igual a 0)\
+\
+Cada cliente puede registrar las tarjetas que quiera para usar en la aplicaci\'f3n. Las tarjetas no deben estar repetidas por usuario.\
+\
+En l\'edneas generales, la aplicaci\'f3n debe permitir:\
+- Agregar un cliente a la aplicaci\'f3n. (No se puede repetir el dni.)\
+- Registrar una Tarjeta para un cliente. (La tarjeta no debe existir previamente en la lista de tarjetas del cliente.)\
+- Realizar una compra\
+- Mostrar la informaci\'f3n de los usuarios y sus respectivas tarjetas, como as\'ed tambi\'e9n ciertas estad\'edsticas especificadas a continuaci\'f3n.\
+\
+Para satisfacer las necesidades de la aplicaci\'f3n nos solicitan realizar los siguientes m\'e9todos en donde corresponda:\
+- agregarCliente(), que recibe los datos necesarios para crear un cliente y registrarlo en la aplicaci\'f3n. Si el cliente ya existe, no lo agrega. El m\'e9todo devuelve un booleano de confirmaci\'f3n.\
+\
+- registrarTarjeta(), que recibe un dni y los datos de una  tarjeta. Debe cumplir las siguientes especificaciones: \
+	El usuario estaba registrado en la aplicaci\'f3n\
+	El n\'famero de tarjeta no debe existir para ese usuario en su lista de tarjetas.\
+	Devuelve un booleano indicando si pudo registrar la tarjeta o no. \
+\
+- mostrarTarjetasPuedenComprar(), dado el dni de un cliente y un monto, muestra la informaci\'f3n de las tarjetas que pueden realizar dicha compra.\
+\
+- mostrarTarjetasConSaldo() Lista la informaci\'f3n de todos los usuarios registrados en la app. De cada usuario adem\'e1s, se quiere visualizar todas las tarjetas que tengan saldo disponible .\
+\
+- obtenerCompras(), retorna una lista que incluye: el dni de cada usuario, junto con la cantidad de compras realizadas hasta el momento.\
+\
+- realizarCompra(), seg\'fan un dni, un monto y una cantidad de cuotas, realiza la compra actualizando el saldo de la tarjeta y contando dicha compra. Debe utilizar la tarjeta que M\'c1S SALDO tenga, y que pueda abonar ese monto. Retorna uno de los siguientes resultados:\
+	TRANSACCION_OK, si pudo realizar la acci\'f3n\
+	SIN_TARJETA_PARA_COMPRA, cuando no exista alguna tarjeta con monto suficiente para realizar dicha compra. \
+	USUARIO_INEXISTENTE, cuando el usuario indicado no exista en la aplicaci\'f3n\
+	ERROR, cuando el monto y/o la cantidad de cuotas especificadas sean err\'f3neas\
+\
+- comprar(), recibe un dni, el monto y una cantidad de cuotas y muestra el resultado de la operaci\'f3n. En caso de que la transacci\'f3n sea realizada, adem\'e1s informa cu\'e1nto se deber\'e1 abonar por cada cuota.\
+\
+Se deben desarrollar todos los m\'e9todos auxiliares que consideres necesarios, para desarrollar un programa correctamente modularizado y aplicando correctamente las responsabilidades de cada clase.\
+\
+\
+Una salida posible de Test, es la siguiente: \
+************\
+Agregamos el usuario 30000000 : true\
+************\
+Agregamos el usuario 40000000 : true\
+***************\
+Registramos tarjeta al usuario dni 30000000\
+numero 2345789000 marca INSTICARD disponible 50000.0 : true\
+***************\
+Registramos tarjeta al usuario dni 30000000\
+numero 4444455555 marca MONTACARD disponible 1000.0 : true\
+***************\
+Registramos tarjeta al usuario dni 35000000\
+numero 1234567890 marca INSTICARD disponible 100000.0 : false\
+***************\
+Registramos tarjeta al usuario dni 40000000\
+numero 6666644444 marca YATAYPLUS disponible 100000.0 : true\
+***************\
+Registramos tarjeta al usuario dni 40000000\
+numero 9999988888 marca INSTICARD disponible 0.0 : true\
+***************\
+Registramos tarjeta al usuario dni 40000000\
+numero 6666644444 marca YATAYPLUS disponible 100000.0 : false\
+************************\
+Vemos que tarjetas del usuario dni 3000000 pueden hacer una compra de 5000\
+Lista de tarjetas ok de 30000000\
+Tarjeta [numero=2345789000, marca=INSTICARD, disponible=50000.0]\
+********************\
+El usuario dni 40000000 hace una compra de 15000 en 3 cuotas\
+Compra realizada por 40000000\
+Monto Compra: 15000 - coutas 3\
+Monto por Cuota:5000\
+************************\
+Listamos los usuarios y  la cantidad de compras que realizaron\
+Usuario: 30000000 - Cant Compras: 0\
+Usuario: 40000000 - Cant Compras: 1\
+**********************\
+\
+*********************\
+Ahora listamos las tarjetas con saldo de todos los usuarios\
+Tarjetas de 30000000\
+Tarjeta [numero=2345789000, marca=INSTICARD, disponible=50000.0]\
+Tarjeta [numero=4444455555, marca=MONTACARD, disponible=1000.0]\
+Tarjetas de 40000000\
+Tarjeta [numero=6666644444, marca=YATAYPLUS, disponible=85000.0]\
+\
+}

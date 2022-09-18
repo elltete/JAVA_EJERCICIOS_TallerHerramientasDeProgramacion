@@ -1,0 +1,249 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Arial-BoldMT;\f1\fswiss\fcharset0 Helvetica;\f2\fswiss\fcharset0 ArialMT;
+\f3\fswiss\fcharset0 Arial-ItalicMT;}
+{\colortbl;\red255\green255\blue255;\red37\green82\blue96;\red255\green255\blue255;\red0\green0\blue0;
+\red0\green0\blue0;\red255\green255\blue255;\red214\green214\blue213;\red52\green52\blue52;\red37\green82\blue96;
+}
+{\*\expandedcolortbl;;\cssrgb\c18519\c39326\c45185;\cssrgb\c100000\c100000\c100000\c0;\cssrgb\c0\c0\c0;
+\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c99985\c0;\cssrgb\c86953\c86952\c86627;\cssrgb\c26667\c26667\c26667;\cssrgb\c18696\c39545\c45357;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19820\viewh15700\viewkind0
+\deftab720
+\pard\pardeftab720\qj\partightenfactor0
+
+\f0\b\fs60 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Enunciado
+\f1\b0\fs72 \cf2 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f2\fs38\fsmilli19333 \cf2 El club Sportivo Vecinal nos solicita desarrollar un programa para registrar a todos los socios junto con su edad. Sabemos que no hay socios con el mismo nombre.
+\f1\fs42 \cf2 \
+
+\f2\fs38\fsmilli19333 \cf2 Adem\'e1s cada socio tiene amigos. Si A es amigo de B, entonces tambi\'e9n B es amigo de A. Una persona no puede ser amiga de s\'ed misma.
+\f1\fs42 \cf2 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs38\fsmilli19333 \cf2 El programa debe:
+\f1\b0\fs42 \cf2 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f2\fs38\fsmilli19333 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf2 \expnd0\expndtw0\kerning0
+Permitir que se agreguen socios verificando que no est\'e9n registrados previamente.
+\f1\fs42 \cf2 \
+\ls1\ilvl0
+\f2\fs38\fsmilli19333 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf2 \expnd0\expndtw0\kerning0
+Permitir que se establezca amistad entre dos socios verificando que no se haya registrado previamente.
+\f1\fs42 \cf2 \
+\ls1\ilvl0
+\f2\fs38\fsmilli19333 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf2 \expnd0\expndtw0\kerning0
+Permitir que se deshaga una amistad previamente establecida.
+\f1\fs42 \cf2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs38\fsmilli19333 \cf2 Considerar
+\f2\b0 \cf2 :
+\f1\fs42 \cf2 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f2\fs38\fsmilli19333 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf2 \expnd0\expndtw0\kerning0
+Las amistades 
+\f0\b \cf2 siempre son rec\'edprocas
+\f2\b0 \cf2 .
+\f1\fs42 \cf2 \
+\ls2\ilvl0
+\f2\fs38\fsmilli19333 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf2 \expnd0\expndtw0\kerning0
+Los socios deben s\'ed o s\'ed tener nombre y una edad l\'f3gica (si no ser\'e1 ERROR). No hay dos socios con el mismo nombre.
+\f1\fs42 \cf2 \
+\ls2\ilvl0
+\f2\fs38\fsmilli19333 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf2 \expnd0\expndtw0\kerning0
+Definir cada m\'e9todo con su modificador de acceso (private/public) correspondiente, creando los m\'e9todos auxiliares necesarios en la clase que considere.
+\f1\fs42 \cf2 \
+\ls2\ilvl0
+\f2\fs38\fsmilli19333 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf2 \expnd0\expndtw0\kerning0
+Cargar todos los datos desde una clase 
+\f0\b \cf2 Test
+\f2\b0 \cf2  contemplando los casos posibles de error (son los que se muestran en la ejecuci\'f3n).
+\f1\fs42 \cf2 \
+\ls2\ilvl0
+\f2\fs38\fsmilli19333 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf2 \expnd0\expndtw0\kerning0
+Crear un Enum llamado 
+\f0\b \cf2 Resultado
+\f2\b0 \cf2  que codifique todos los casos distintos de resultado posible tales como OK, YA_EXISTE, NOMBRES_IGUALES, etc. para los m\'e9todos de agregar socios, establecer amistad y deshacer amistad.
+\f1\fs42 \cf2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs38\fsmilli19333 \cf2 Se desea que el programa pueda
+\f2\b0 \cf2 :
+\f1\fs42 \cf2 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\qj\partightenfactor0
+\ls3\ilvl0
+\f2\fs38\fsmilli19333 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf2 \expnd0\expndtw0\kerning0
+Devolver una colecci\'f3n con el nombre y la edad de los amigos de uno de los socios a partir de su nombre (se recibe como par\'e1metro). Si no existe ning\'fan socio con ese nombre devolver 
+\f3\i \cf2 null
+\f2\i0 \cf2 .\cf0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\qj\partightenfactor0
+\ls3\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf2 \expnd0\expndtw0\kerning0
+Generar por pantalla un listado de todos los socios junto con el promedio de edad de sus amigos.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\qj\partightenfactor0
+\ls3\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\qj\partightenfactor0
+\cf2 Para probar el programa desarroll\'e1 la clase Test agregando los casos de prueba que se ven a continuaci\'f3n. No hace falta que cargues los socios a mano. Es deseable que se haga la validaci\'f3n de los datos resultantes (chequear si dio lo esperado) pero no es obligatorio.
+\f1\fs42 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs38\fsmilli19333 \cf2 El resultado por pantalla deber\'eda ser similar al siguiente
+\f2\b0 \cf2 :
+\f1\fs42 \cf2 \
+\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clcbpat8 \clwWidth5908\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt133 \clpadl133 \clpadb133 \clpadr133 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\fs36 \cf5 \cb6 agregarSocio (Juan, 23): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 agregarSocio (Laura, 18): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 agregarSocio (Maria, 26): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 agregarSocio (Joaquin, 20): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 agregarSocio (Belen, 20): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 agregarSocio (Daniel, 21): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 agregarSocio (Valeria, 20): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 agregarSocio (Ana, 19): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 agregarSocio (Javier, 22): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 agregarSocio (Javier, 22): YA_EXISTE
+\fs42 \cf5 \cb6 \
+\
+
+\fs36 \cf5 \cb6 establecerAmistad (Juan/Ana): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 establecerAmistad (Laura/Ana): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 establecerAmistad (Laura/Juan): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 establecerAmistad (Maria/Ana): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 establecerAmistad (Belen/Joaquin): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 establecerAmistad (Belen/Daniel): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 establecerAmistad (Valeria/Ana): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 establecerAmistad (Ana/Daniel): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 establecerAmistad (Javier/Juan): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 establecerAmistad (Javier/Ana): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 establecerAmistad (Ana/Javier): YA_SON_AMIGOS
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 establecerAmistad (Ana/Ana): NOMBRES_IGUALES
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 establecerAmistad (Laura/Marcelo): NO_EXISTE
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 establecerAmistad (Toribio/Ana): NO_EXISTE
+\fs42 \cf5 \cb6 \
+\
+
+\fs36 \cf5 \cb6 deshacerAmistad (Ana/Javier): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 deshacerAmistad (Ana/Valeria): OK
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 deshacerAmistad (Ana/Ana): NOMBRES_IGUALES
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 deshacerAmistad (Laura/Marcelo): NO_EXISTE
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 deshacerAmistad (Toribio/Ana): NO_EXISTE
+\fs42 \cf5 \cb6 \
+\
+
+\fs36 \cf5 \cb6 Socios con edad promedio de sus amigos:
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 Juan - 19.666666666666668
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 Laura - 21.0
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 Maria - 19.0
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 Joaquin - 20.0
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 Belen - 20.5
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 Daniel - 19.5
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 Valeria - no tiene amigos
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 Ana - 22.0
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 Javier - 23.0
+\fs42 \cf5 \cb6 \
+\
+
+\fs36 \cf5 \cb6 Amigos de Laura
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 Amigo [nombre=Ana, edad=19]
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 Amigo [nombre=Juan, edad=23]
+\fs42 \cf5 \cb6 \
+\
+
+\fs36 \cf5 \cb6 Amigos de Walter
+\fs42 \cf5 \cb6 \
+
+\fs36 \cf5 \cb6 No hay nadie que se llame Walter
+\fs42 \cf5 \cb6 \cell \lastrow\row
+}

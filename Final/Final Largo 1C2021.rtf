@@ -1,0 +1,81 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww17640\viewh14380\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 FINAL \
+\
+\
+Se necesita desarrollar un programa que implemente el manejo de casos de COVID en un colegio.\
+\
+El colegio debe ser capaz de agregar cursos nuevos y nuevos estudiantes. En cada curso hay varios estudiantes y un \'fanico docente a cargo. Este docente puede estar a cargo de diferentes cursos, mientras que los alumnos est\'e1n SOLO en un curso.\
+\
+En caso de conocer un nuevo caso de COVID en un estudiante el colegio deber\'e1 actualizar el estado de este estudiante como POSITIVO y el curso completo al cual pertenece debe quedar aislado \
+\
+Adem\'e1s se debe chequear si el docente involucrado imparte clases en otros cursos. De darse esta situaci\'f3n, los dem\'e1s cursos implicados tambi\'e9n deber\'e1n ser aislados.\
+\
+Por motivos de simplicidad, no se pide desarrollar la l\'f3gica de detecci\'f3n de COVID en docentes, solo en estudiantes.\
+\
+Por \'faltimo, el colegio necesita obtener ciertas estad\'edsticas que muestren al momento el estado de situaci\'f3n del colegio respecto a la pandemia.\
+\
+Se pide crear lo siguiente m\'e9todos, donde corresponda:\
+\
+Constructor de Colegio: Recibe el nombre del colegio e inicializa sus atributos.\
+\
+M\'e9todo agregarCurso(): crea un nuevo curso en el colegio, el cual tiene: nombre del curso y el dni del docente, Retorna un booleano de confirmaci\'f3n.\
+El nombre de curso no puede repetirse.\
+\
+M\'e9todo agregarEstudiante(): crea un nuevo estudiante en un determinado curso, para ello se debe especificar: nombre del curso y los datos de un Estudiante (de quien conocemos su dni y su apellido).\
+\
+Al agregarse un nuevo estudiante a un curso, este siempre cuenta con su estado Covid iniciado en NEGATIVO). No se podr\'e1 agregar un estudiante con dni repetido, ni tampoco ser\'e1 efectuado si el curso especificado no existe, por lo cual este m\'e9todo retorna un booleano de confirmaci\'f3n de la acci\'f3n.  \
+\
+M\'e9todo informarCasoCovid(): Para informar el caso de COVID detectado, recibe el nombre del curso y el dni del estudiante con COVID. El m\'e9todo retornar\'e1 alguno de los siguientes resultados:\
+\
+ERROR_CURSO_INEXISTENTE: Cuando no encuentre dicho curso en el Colegio.\
+\
+ERROR_ESTUDIANTE_INEXISTENTE: Cuando no existe el estudiante en el curso que se especific\'f3.\
+\
+ERROR_YA_TENIA_COVID: Cuando el estudiante ya ten\'eda previamente COVID\
+\
+OK: Cuando se logr\'f3 informar el caso, modificando el estado de COVID del estudiante en cuesti\'f3n. IMPORTANTE: record\'e1 que en este caso es necesario aislar tambi\'e9n a todo el curso, como as\'ed tambi\'e9n a los otros cursos que compartan el mismo docente.\
+\
+M\'e9todo obtenerCursosAislados() : Retorna una lista que contenga, nombre del curso y cantidad de alumnos con COVID de todos los cursos que est\'e1n aislados.\
+\
+Metodo listarCursosdeDocente(): dado un dni de un docente, muestra el nombre de los cursos y la cantidad de alumnos que tiene\
+\
+Record\'e1 que deb\'e9s crear todos los m\'e9todos que consideres necesarios para mantener el correcto manejo de responsabilidades y encapsulamiento entre los objetos. \
+\
+Para comprobar la resoluci\'f3n del parcial, probar el correcto funcionamiento del Test adjunto a la consigna, que se encuentra en el Aula Virtual. \
+\
+Agregamos Curso con Curso:3QA, DNI Docente:11111111  true\
+Agregamos Curso con Curso:3IA, DNI Docente:22222222  true\
+Agregamos Curso con Curso:3IB, DNI Docente:11111111  true\
+\
+Agregamos Alumno con Curso:3QA, DNI Alumno:12345678, Apellido:Juarez true\
+Agregamos Alumno con Curso:3QA, DNI Alumno:12345678, Apellido:Juarez false\
+Agregamos Alumno con Curso:3IA, DNI Alumno:22222222, Apellido:Gonzalez true\
+Agregamos Alumno con Curso:3IA, DNI Alumno:99999999, Apellido:Fernandez true\
+Agregamos Alumno con Curso:3IA, DNI Alumno:77777777, Apellido:Fernandez true\
+\
+Informamos COVID Curso:333A, DNI Alumno:1235678 ERROR_CURSO_INEXISTENTE\
+Informamos COVID Curso:3QA, DNI Alumno:333 ERROR_ESTUDIANTE_INEXISTENTE\
+InformamosCOVID Curso:3QA, DNI Alumno:1235678 OK\
+Informamos COVID Curso:3QA, DNI Alumno:1235678 ERROR_YA_TENIA_COVID\
+\
+Obtenemos y Listamos cursos Aislados\
+\
+Cursos aislados\
+\
+Curso: 3QA\
+Cant Contagiados: 1\
+\
+Curso: 3IB\
+Cant Contagiados: 0\
+\
+Listamos los cursos de Docente DNI 11111111\
+\
+Curso 3QA Docente 11111111 Cant Alumnos 1\
+Curso 3IB Docente 11111111 Cant Alumnos  0\
+}
